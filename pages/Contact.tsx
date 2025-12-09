@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, MapPin, Globe } from 'lucide-react';
+import { Mail, Globe, Send } from 'lucide-react';
 
 const Contact: React.FC = () => {
   return (
@@ -13,8 +13,8 @@ const Contact: React.FC = () => {
             </p>
             
             <div className="space-y-6 pt-4">
-                <div className="flex items-center gap-4 text-gray-300">
-                    <div className="p-3 bg-zinc-900 rounded-full text-white">
+                <div className="flex items-center gap-4 text-gray-300 group">
+                    <div className="p-3 bg-zinc-900 rounded-full text-white group-hover:bg-white group-hover:text-black transition-colors">
                         <Mail size={24} />
                     </div>
                     <div>
@@ -23,8 +23,8 @@ const Contact: React.FC = () => {
                     </div>
                 </div>
                 
-                <div className="flex items-center gap-4 text-gray-300">
-                     <div className="p-3 bg-zinc-900 rounded-full text-white">
+                <div className="flex items-center gap-4 text-gray-300 group">
+                     <div className="p-3 bg-zinc-900 rounded-full text-white group-hover:bg-white group-hover:text-black transition-colors">
                         <Globe size={24} />
                     </div>
                     <div>
@@ -35,22 +35,22 @@ const Contact: React.FC = () => {
             </div>
         </div>
 
-        <div className="bg-zinc-900 p-8 rounded-sm border border-white/5">
-            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+        <div className="bg-zinc-900/50 p-8 rounded-sm border border-white/5 backdrop-blur-sm">
+            <form className="space-y-6" onSubmit={(e) => { e.preventDefault(); alert('Message sent (demo)!'); }}>
                 <div>
                     <label className="block text-xs uppercase text-gray-500 font-bold tracking-widest mb-2">Name</label>
-                    <input type="text" className="w-full bg-black border border-white/10 p-3 text-white focus:border-white focus:outline-none transition-colors" placeholder="Your Name" />
+                    <input type="text" className="w-full bg-black/50 border border-white/10 p-3 text-white focus:border-white focus:outline-none transition-colors" placeholder="Your Name" required />
                 </div>
                 <div>
                     <label className="block text-xs uppercase text-gray-500 font-bold tracking-widest mb-2">Email</label>
-                    <input type="email" className="w-full bg-black border border-white/10 p-3 text-white focus:border-white focus:outline-none transition-colors" placeholder="your@email.com" />
+                    <input type="email" className="w-full bg-black/50 border border-white/10 p-3 text-white focus:border-white focus:outline-none transition-colors" placeholder="your@email.com" required />
                 </div>
                 <div>
                     <label className="block text-xs uppercase text-gray-500 font-bold tracking-widest mb-2">Message</label>
-                    <textarea rows={4} className="w-full bg-black border border-white/10 p-3 text-white focus:border-white focus:outline-none transition-colors" placeholder="Write your message..."></textarea>
+                    <textarea rows={4} className="w-full bg-black/50 border border-white/10 p-3 text-white focus:border-white focus:outline-none transition-colors" placeholder="Write your message..." required></textarea>
                 </div>
-                <button type="submit" className="w-full bg-white text-black font-bold uppercase tracking-widest py-4 hover:bg-gray-200 transition-colors">
-                    Send Message
+                <button type="submit" className="w-full bg-white text-black font-bold uppercase tracking-widest py-4 hover:bg-gray-200 transition-colors flex items-center justify-center gap-2">
+                    Send Message <Send size={16} />
                 </button>
             </form>
         </div>

@@ -35,3 +35,8 @@ export interface Lyric {
   title: string;
   content: string; // HTML or newlines
 }
+
+export interface BioSection {
+  title: string;
+  content: string;
+}
