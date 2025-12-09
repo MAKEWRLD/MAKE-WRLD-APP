@@ -30,7 +30,7 @@ export const RELEASES: Release[] = [
     id: "no-make-sense-ep",
     title: "NO MAKE SENSE",
     type: ReleaseType.EP,
-    year: "2022",
+    year: "2024",
     coverUrl: "https://img.youtube.com/vi/RZGOYRzLJ7c/maxresdefault.jpg",
     youtubeUrl: "https://youtu.be/RZGOYRzLJ7c?si=iCaJmLNE7oYOULWs",
     tracks: [
@@ -109,7 +109,7 @@ export const BIOGRAPHY_SECTIONS: BioSection[] = [
     title: "Sobre MAKE WRLD",
     content: `MAKE WRLD é um artista emergente de Viseu, Portugal. Ele mistura trap, afro vibes e sons experimentais, criando uma energia única em cada faixa.
     
-Ex-membro da Turma da Pausa, reiniciou a sua carreira musical em 2022 e tem crescido consistentemente desde então.
+Reiniciou a sua carreira musical em 2022 e tem crescido consistentemente desde então.
     
 Com músicas como "TRAJADO", "FUKIN TRAP", "MAIS PERTO" e o EP NO MAKE SENSE, ele explora o caos do mundo enquanto encontra a sua própria identidade.`
   }

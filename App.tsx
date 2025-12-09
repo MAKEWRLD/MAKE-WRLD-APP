@@ -8,7 +8,6 @@ import Discography from './pages/Discography';
 import FDS from './pages/FDS';
 import NoMakeSense from './pages/NoMakeSense';
 import Videos from './pages/Videos';
-import Lyrics from './pages/Lyrics';
 import Contact from './pages/Contact';
 
 // Scroll to top component
@@ -34,7 +33,6 @@ const App: React.FC = () => {
             <Route path="/fds" element={<FDS />} />
             <Route path="/no-make-sense" element={<NoMakeSense />} />
             <Route path="/videos" element={<Videos />} />
-            <Route path="/lyrics" element={<Lyrics />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>

@@ -42,22 +42,9 @@ const Home: React.FC = () => {
         
         <div className="max-w-5xl mx-auto px-4 w-full flex flex-col items-center text-center gap-12">
           
-          {/* Artist Image - Centered, Square/Rectangular now */}
-          <div className="animate-fade-in relative group">
-             <div className="absolute inset-0 bg-white/5 blur-3xl group-hover:bg-white/10 transition-colors duration-700"></div>
-            <div className="relative w-[300px] h-[300px] md:w-[450px] md:h-[450px] overflow-hidden shadow-2xl border border-white/5 mx-auto rounded-lg">
-               <img 
-                src="https://images.unsplash.com/photo-1621360841013-c768371e93cf?q=80&w=1000&auto=format&fit=crop" 
-                alt="MAKE WRLD" 
-                loading="lazy"
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 transform group-hover:scale-105"
-              />
-            </div>
-          </div>
-
           {/* Text Content */}
-          <div className="space-y-6 animate-slide-up max-w-3xl">
-            <h1 className="text-7xl md:text-9xl font-black tracking-tighter text-white leading-none">
+          <div className="space-y-6 animate-slide-up max-w-4xl mt-12">
+            <h1 className="text-7xl md:text-[10rem] font-black tracking-tighter text-white leading-none">
               MAKE WRLD
             </h1>
             

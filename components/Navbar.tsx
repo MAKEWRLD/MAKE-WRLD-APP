@@ -11,7 +11,6 @@ const Navbar: React.FC = () => {
     { name: 'Sobre', path: '/biography' },
     { name: 'Música', path: '/discography' },
     { name: 'Vídeos', path: '/videos' },
-    { name: 'Letras', path: '/lyrics' },
     { name: 'Contato', path: '/contact' },
   ];
 
