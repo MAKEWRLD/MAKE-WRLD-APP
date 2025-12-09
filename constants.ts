@@ -5,7 +5,7 @@ export const SOCIAL_LINKS = {
   spotify: "https://open.spotify.com/intl-pt/artist/4mMdo6sMaVvO54ZlifNKst?si=ctlMqHM4RI-nnUZDSismjA",
   youtube: "https://www.youtube.com/@MAKEWRLD?sub_confirmation=1",
   instagram: "https://www.instagram.com/makewrld_",
-  soundcloud: "https://soundcloud.com/make-wrld?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+  soundcloud: "https://soundcloud.com/make-wrld",
   facebook: "http://web.facebook.com/people/MAKE-WRLD/100091471166925/"
 };
 
@@ -44,11 +44,11 @@ export const RELEASES: Release[] = [
     ]
   },
   {
-    id: "trajados-single",
-    title: "TRAJADO",
+    id: "mais-perto-single",
+    title: "MAIS PERTO",
     type: ReleaseType.SINGLE,
-    year: "2022",
-    coverUrl: "https://picsum.photos/seed/trajado/800/800",
+    year: "2023",
+    coverUrl: "https://picsum.photos/seed/maisperto/800/800",
     spotifyUrl: SOCIAL_LINKS.spotify,
     appleMusicUrl: SOCIAL_LINKS.apple,
     youtubeUrl: SOCIAL_LINKS.youtube
@@ -59,6 +59,16 @@ export const RELEASES: Release[] = [
     type: ReleaseType.SINGLE,
     year: "2023",
     coverUrl: "https://picsum.photos/seed/fukintrap/800/800",
+    spotifyUrl: SOCIAL_LINKS.spotify,
+    appleMusicUrl: SOCIAL_LINKS.apple,
+    youtubeUrl: SOCIAL_LINKS.youtube
+  },
+  {
+    id: "trajados-single",
+    title: "TRAJADO",
+    type: ReleaseType.SINGLE,
+    year: "2022",
+    coverUrl: "https://picsum.photos/seed/trajado/800/800",
     spotifyUrl: SOCIAL_LINKS.spotify,
     appleMusicUrl: SOCIAL_LINKS.apple,
     youtubeUrl: SOCIAL_LINKS.youtube
@@ -79,13 +89,13 @@ export const VIDEOS: Video[] = [
   {
     id: "vid-trajado",
     title: "TRAJADO (Official Video)",
-    youtubeId: "dQw4w9WgXcQ", // Placeholder ID, replace with real ID if available
+    youtubeId: "dQw4w9WgXcQ",
     thumbnailUrl: "https://picsum.photos/seed/vidtrajado/1280/720"
   },
   {
     id: "vid-fukin",
     title: "FUKIN TRAP (Official Video)",
-    youtubeId: "dQw4w9WgXcQ", // Placeholder ID
+    youtubeId: "dQw4w9WgXcQ",
     thumbnailUrl: "https://picsum.photos/seed/vidfukin/1280/720"
   },
   {
@@ -125,15 +135,11 @@ Do Viseu para o mundo, essa é a missão`
 
 export const BIOGRAPHY_SECTIONS: BioSection[] = [
   {
-    title: "Origins",
-    content: "MAKE WRLD is the artistic name of Milton Lemba, born in Viseu, Portugal. His musical journey began in 2016 as part of the group 'Turma Da Pausa', where he first explored his passion for rhythm and poetry."
-  },
-  {
-    title: "The Return",
-    content: "After a hiatus, he returned to the music scene in 2022 with the release of his debut solo song 'TRAJADO'. This marked a pivotal moment, defining a sound that blends raw emotions with modern trap and hip-hop influences."
-  },
-  {
-    title: "The Sound",
-    content: "Since then, he has released the EP 'NO MAKE SENSE' and multiple singles and collaborations, including 'FUKIN TRAP'. MAKE WRLD creates a unique sonic universe that connects with a wide audience, constantly evolving his style while staying true to his roots."
+    title: "About MAKE WRLD",
+    content: `MAKE WRLD (Milton Gomes Lemba) is an emerging artist from Viseu, Portugal. He mixes trap, afro vibes and experimental sonorities, creating a unique energy in every track.
+    
+Former member of Turma da Pausa, he restarted his musical journey in 2022 and has grown consistently since then.
+    
+With songs like "TRAJADO", "FUKIN TRAP", "MAIS PERTO" and the EP NO MAKE SENSE, he explores the chaos of the world while finding his own identity.`
   }
 ];
