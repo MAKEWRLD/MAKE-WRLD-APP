@@ -11,32 +11,12 @@ export const SOCIAL_LINKS = {
 
 export const RELEASES: Release[] = [
   {
-    id: "fds-album",
-    title: "FDS",
-    type: ReleaseType.ALBUM,
-    year: "2023",
-    coverUrl: "https://picsum.photos/seed/fds/800/800",
-    spotifyUrl: SOCIAL_LINKS.spotify,
-    appleMusicUrl: SOCIAL_LINKS.apple,
-    youtubeUrl: SOCIAL_LINKS.youtube,
-    tracks: [
-      { title: "Intro (FDS)", duration: "2:10" },
-      { title: "Chaos Theory", duration: "3:45" },
-      { title: "Lost in Static", duration: "3:12" },
-      { title: "FDS", duration: "4:01" },
-      { title: "Nightwalk", duration: "2:58" },
-      { title: "Outro", duration: "1:45" }
-    ]
-  },
-  {
     id: "no-make-sense-ep",
     title: "NO MAKE SENSE",
     type: ReleaseType.EP,
     year: "2022",
-    coverUrl: "https://picsum.photos/seed/nomakesense/800/800",
-    spotifyUrl: SOCIAL_LINKS.spotify,
-    appleMusicUrl: SOCIAL_LINKS.apple,
-    youtubeUrl: SOCIAL_LINKS.youtube,
+    coverUrl: "https://img.youtube.com/vi/RZGOYRzLJ7c/maxresdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=RZGOYRzLJ7c&list=PLavXdLQTmH2FefuvmQs0Z5YMbqPoY7LcT&pp=gAQB",
     tracks: [
       { title: "Nonsense", duration: "2:55" },
       { title: "Void", duration: "3:10" },
@@ -44,44 +24,20 @@ export const RELEASES: Release[] = [
     ]
   },
   {
-    id: "mais-perto-single",
-    title: "MAIS PERTO",
-    type: ReleaseType.SINGLE,
-    year: "2023",
-    coverUrl: "https://picsum.photos/seed/maisperto/800/800",
-    spotifyUrl: SOCIAL_LINKS.spotify,
-    appleMusicUrl: SOCIAL_LINKS.apple,
-    youtubeUrl: SOCIAL_LINKS.youtube
-  },
-  {
     id: "fukin-trap-single",
     title: "FUKIN TRAP",
     type: ReleaseType.SINGLE,
     year: "2023",
-    coverUrl: "https://picsum.photos/seed/fukintrap/800/800",
-    spotifyUrl: SOCIAL_LINKS.spotify,
-    appleMusicUrl: SOCIAL_LINKS.apple,
-    youtubeUrl: SOCIAL_LINKS.youtube
+    coverUrl: "https://img.youtube.com/vi/bPBIs6OFzDA/maxresdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=bPBIs6OFzDA&list=PLavXdLQTmH2G3Izjx_xW1Av2dPHd38hYj&pp=gAQB"
   },
   {
-    id: "trajados-single",
+    id: "trajado-single",
     title: "TRAJADO",
     type: ReleaseType.SINGLE,
     year: "2022",
-    coverUrl: "https://picsum.photos/seed/trajado/800/800",
-    spotifyUrl: SOCIAL_LINKS.spotify,
-    appleMusicUrl: SOCIAL_LINKS.apple,
-    youtubeUrl: SOCIAL_LINKS.youtube
-  },
-  {
-    id: "midnight-single",
-    title: "Midnight",
-    type: ReleaseType.SINGLE,
-    year: "2021",
-    coverUrl: "https://picsum.photos/seed/midnight/800/800",
-    spotifyUrl: SOCIAL_LINKS.spotify,
-    appleMusicUrl: SOCIAL_LINKS.apple,
-    youtubeUrl: SOCIAL_LINKS.youtube
+    coverUrl: "https://img.youtube.com/vi/SnhuF4EIAyo/maxresdefault.jpg",
+    youtubeUrl: "https://youtu.be/SnhuF4EIAyo?si=HP6p2X5s-SOqumEr"
   }
 ];
 
@@ -89,39 +45,24 @@ export const VIDEOS: Video[] = [
   {
     id: "vid-trajado",
     title: "TRAJADO (Official Video)",
-    youtubeId: "dQw4w9WgXcQ",
-    thumbnailUrl: "https://picsum.photos/seed/vidtrajado/1280/720"
+    youtubeId: "SnhuF4EIAyo",
+    thumbnailUrl: "https://img.youtube.com/vi/SnhuF4EIAyo/maxresdefault.jpg"
   },
   {
     id: "vid-fukin",
     title: "FUKIN TRAP (Official Video)",
-    youtubeId: "dQw4w9WgXcQ",
-    thumbnailUrl: "https://picsum.photos/seed/vidfukin/1280/720"
+    youtubeId: "bPBIs6OFzDA",
+    thumbnailUrl: "https://img.youtube.com/vi/bPBIs6OFzDA/maxresdefault.jpg"
   },
   {
-    id: "vid-fds",
-    title: "FDS (Official Video)",
-    youtubeId: "dQw4w9WgXcQ",
-    thumbnailUrl: "https://picsum.photos/seed/vidfds/1280/720"
+    id: "vid-nomakesense",
+    title: "NO MAKE SENSE (Visualizer)",
+    youtubeId: "RZGOYRzLJ7c",
+    thumbnailUrl: "https://img.youtube.com/vi/RZGOYRzLJ7c/maxresdefault.jpg"
   }
 ];
 
 export const LYRICS: Lyric[] = [
-  {
-    id: "lyric-fds",
-    title: "FDS",
-    content: `(Verse 1)
-Walking through the shadows of the city lights
-Searching for a meaning in these endless nights
-The noise is getting louder, can't hear my own thoughts
-Caught in a web that the modern world has bought
-
-(Chorus)
-FDS, it's all a mess
-Trying to find purpose, nothing less
-In the chaos we find our way
-Living for another day`
-  },
   {
     id: "lyric-trajado",
     title: "TRAJADO",

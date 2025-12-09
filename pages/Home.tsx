@@ -8,51 +8,50 @@ const Home: React.FC = () => {
     <div className="min-h-screen bg-brand-dark">
       
       {/* HERO SECTION */}
-      <div className="relative min-h-[90vh] flex items-center overflow-hidden">
+      <div className="relative min-h-[90vh] flex flex-col justify-center items-center overflow-hidden pt-20 pb-10">
          {/* Background Effect */}
         <div className="absolute inset-0 bg-brand-dark z-0">
-           <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-purple-900/10 blur-[120px] rounded-full pointer-events-none" />
-           <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-blue-900/10 blur-[120px] rounded-full pointer-events-none" />
+           <div className="absolute top-[10%] left-[50%] -translate-x-1/2 w-[80%] h-[50%] bg-purple-900/10 blur-[120px] rounded-full pointer-events-none" />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 w-full relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-4xl mx-auto px-4 w-full relative z-10 flex flex-col items-center text-center gap-10">
           
           {/* Text Content */}
-          <div className="order-2 lg:order-1 space-y-8 text-center lg:text-left animate-slide-up">
-            <h1 className="text-6xl md:text-8xl font-black tracking-tighter text-white leading-none">
+          <div className="space-y-6 animate-slide-up">
+            <h1 className="text-6xl md:text-9xl font-black tracking-tighter text-white leading-none">
               MAKE <br/> WRLD
             </h1>
             
-            <p className="text-lg md:text-xl text-gray-400 font-light italic tracking-wide border-l-2 border-white/20 pl-6 ml-4 lg:ml-0">
+            <p className="text-lg md:text-2xl text-gray-400 font-light italic tracking-wide">
               "In the chaos of the world, we find our own meaning."
             </p>
 
-            <div className="pt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="pt-4 flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
                 to="/discography" 
-                className="group px-8 py-4 bg-white text-black font-bold uppercase tracking-widest hover:bg-gray-200 transition-colors flex items-center justify-center gap-2 min-w-[180px]"
+                className="group px-8 py-4 bg-white text-black font-bold uppercase tracking-widest hover:bg-gray-200 transition-colors flex items-center justify-center gap-2 min-w-[200px]"
               >
                 Listen Now
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link 
                 to="/biography" 
-                className="px-8 py-4 border border-white/20 text-white font-bold uppercase tracking-widest hover:bg-white/5 transition-colors min-w-[180px]"
+                className="px-8 py-4 border border-white/20 text-white font-bold uppercase tracking-widest hover:bg-white/5 transition-colors min-w-[200px]"
               >
                 About Me
               </Link>
             </div>
           </div>
 
-          {/* Artist Image */}
-          <div className="order-1 lg:order-2 flex justify-center lg:justify-end animate-fade-in">
-            <div className="relative w-[300px] h-[400px] md:w-[450px] md:h-[600px] bg-zinc-800 rounded-sm overflow-hidden shadow-2xl border-r-4 border-b-4 border-white/10">
+          {/* Artist Image - Centered */}
+          <div className="animate-fade-in mt-4">
+            <div className="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px] bg-zinc-800 rounded-full overflow-hidden shadow-2xl border-4 border-white/5 mx-auto">
                <img 
-                src="https://picsum.photos/seed/makewrldportrait/800/1200" 
+                src="https://picsum.photos/seed/makewrldportrait/800/800" 
                 alt="MAKE WRLD - Milton Gomes Lemba" 
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent opacity-60"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/50 via-transparent to-transparent"></div>
             </div>
           </div>
         </div>
