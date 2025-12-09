@@ -7,12 +7,12 @@ const Navbar: React.FC = () => {
   const location = useLocation();
 
   const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'Bio', path: '/biography' },
-    { name: 'Music', path: '/discography' },
-    { name: 'Videos', path: '/videos' },
-    { name: 'Lyrics', path: '/lyrics' },
-    { name: 'Contact', path: '/contact' },
+    { name: 'Início', path: '/' },
+    { name: 'Sobre', path: '/biography' },
+    { name: 'Música', path: '/discography' },
+    { name: 'Vídeos', path: '/videos' },
+    { name: 'Letras', path: '/lyrics' },
+    { name: 'Contato', path: '/contact' },
   ];
 
   const isActive = (path: string) => location.pathname === path;

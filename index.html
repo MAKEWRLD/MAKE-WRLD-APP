@@ -4,23 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MAKE WRLD | Official Artist Site</title>
-    <meta name="description" content="MAKE WRLD | Official Artist Site - Música, vídeos e novidades do artista">
+    <meta name="description" content="MAKE WRLD | Official Artist Site - Music, videos and news">
 
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;900&family=Playfair+Display:ital,wght@1,400&family=Space+Mono&display=swap" rel="stylesheet">
 
     <script>
       tailwind.config = {
         darkMode: 'class',
         theme: {
           extend: {
-            fontFamily: { sans: ['Inter', 'sans-serif'] },
+            fontFamily: { 
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+              mono: ['Space Mono', 'monospace'],
+            },
             colors: {
               brand: {
-                dark: '#0a0a0a',
+                dark: '#000000',
                 gray: '#171717',
                 light: '#e5e5e5',
                 accent: '#ffffff'
@@ -29,10 +33,15 @@
             animation: {
               'fade-in': 'fadeIn 1s ease-out forwards',
               'slide-up': 'slideUp 0.8s ease-out forwards',
+              'float': 'float 6s ease-in-out infinite',
             },
             keyframes: {
               fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
-              slideUp: { '0%': { opacity: '0', transform: 'translateY(20px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } }
+              slideUp: { '0%': { opacity: '0', transform: 'translateY(20px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              }
             }
           },
         },
@@ -40,12 +49,12 @@
     </script>
 
     <style>
-      body { background-color: #0a0a0a; color: #e5e5e5; font-family: 'Inter', sans-serif; }
+      body { background-color: #000000; color: #e5e5e5; font-family: 'Inter', sans-serif; }
       ::-webkit-scrollbar { width: 8px; }
-      ::-webkit-scrollbar-track { background: #0a0a0a; }
+      ::-webkit-scrollbar-track { background: #000000; }
       ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
       ::-webkit-scrollbar-thumb:hover { background: #555; }
-      body { scrollbar-color: #333 #0a0a0a; scrollbar-width: thin; }
+      body { scrollbar-color: #333 #000000; scrollbar-width: thin; }
       
       .glitch-effect {
         position: relative;

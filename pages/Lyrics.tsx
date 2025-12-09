@@ -12,7 +12,7 @@ const Lyrics: React.FC = () => {
   return (
     <div className="min-h-screen pt-24 pb-12 px-4 max-w-3xl mx-auto">
       <div className="animate-fade-in">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center tracking-tight text-white">LYRICS</h2>
+        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center tracking-tight text-white">LETRAS</h2>
         
         <div className="space-y-4">
             {LYRICS.map((lyric) => (
@@ -37,7 +37,7 @@ const Lyrics: React.FC = () => {
         </div>
         
         <div className="mt-12 text-center p-8 border border-dashed border-white/10 rounded-lg">
-            <p className="text-gray-500 italic">More lyrics coming soon...</p>
+            <p className="text-gray-500 italic">Mais letras em breve...</p>
         </div>
       </div>
     </div>

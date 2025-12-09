@@ -7,9 +7,9 @@ const Contact: React.FC = () => {
       <div className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-12 animate-slide-up">
         
         <div className="space-y-8">
-            <h2 className="text-5xl font-bold tracking-tighter text-white">GET IN TOUCH</h2>
+            <h2 className="text-5xl font-bold tracking-tighter text-white">ENTRE EM CONTATO</h2>
             <p className="text-gray-400 text-lg font-light leading-relaxed">
-                For booking inquiries, collaborations, or press information, please contact the management team directly.
+                Para reservas, colaborações ou informações de imprensa, entre em contato diretamente com a equipe.
             </p>
             
             <div className="space-y-6 pt-4">
@@ -28,7 +28,7 @@ const Contact: React.FC = () => {
                         <Globe size={24} />
                     </div>
                     <div>
-                         <p className="text-xs uppercase text-gray-500 font-bold tracking-widest">Socials</p>
+                         <p className="text-xs uppercase text-gray-500 font-bold tracking-widest">Redes Sociais</p>
                          <p className="text-xl">@makewrld</p>
                     </div>
                 </div>
@@ -36,21 +36,21 @@ const Contact: React.FC = () => {
         </div>
 
         <div className="bg-zinc-900/50 p-8 rounded-sm border border-white/5 backdrop-blur-sm">
-            <form className="space-y-6" onSubmit={(e) => { e.preventDefault(); alert('Message sent (demo)!'); }}>
+            <form className="space-y-6" onSubmit={(e) => { e.preventDefault(); alert('Mensagem enviada (demo)!'); }}>
                 <div>
-                    <label className="block text-xs uppercase text-gray-500 font-bold tracking-widest mb-2">Name</label>
-                    <input type="text" className="w-full bg-black/50 border border-white/10 p-3 text-white focus:border-white focus:outline-none transition-colors" placeholder="Your Name" required />
+                    <label className="block text-xs uppercase text-gray-500 font-bold tracking-widest mb-2">Nome</label>
+                    <input type="text" className="w-full bg-black/50 border border-white/10 p-3 text-white focus:border-white focus:outline-none transition-colors" placeholder="Seu Nome" required />
                 </div>
                 <div>
                     <label className="block text-xs uppercase text-gray-500 font-bold tracking-widest mb-2">Email</label>
-                    <input type="email" className="w-full bg-black/50 border border-white/10 p-3 text-white focus:border-white focus:outline-none transition-colors" placeholder="your@email.com" required />
+                    <input type="email" className="w-full bg-black/50 border border-white/10 p-3 text-white focus:border-white focus:outline-none transition-colors" placeholder="seu@email.com" required />
                 </div>
                 <div>
-                    <label className="block text-xs uppercase text-gray-500 font-bold tracking-widest mb-2">Message</label>
-                    <textarea rows={4} className="w-full bg-black/50 border border-white/10 p-3 text-white focus:border-white focus:outline-none transition-colors" placeholder="Write your message..." required></textarea>
+                    <label className="block text-xs uppercase text-gray-500 font-bold tracking-widest mb-2">Mensagem</label>
+                    <textarea rows={4} className="w-full bg-black/50 border border-white/10 p-3 text-white focus:border-white focus:outline-none transition-colors" placeholder="Escreva sua mensagem..." required></textarea>
                 </div>
                 <button type="submit" className="w-full bg-white text-black font-bold uppercase tracking-widest py-4 hover:bg-gray-200 transition-colors flex items-center justify-center gap-2">
-                    Send Message <Send size={16} />
+                    Enviar Mensagem <Send size={16} />
                 </button>
             </form>
         </div>
