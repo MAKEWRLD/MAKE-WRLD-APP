@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Globe, Send } from 'lucide-react';
+import { Mail, Globe, Send, MessageCircle } from 'lucide-react';
 
 const Contact: React.FC = () => {
   return (
@@ -20,6 +20,18 @@ const Contact: React.FC = () => {
                     <div>
                         <p className="text-xs uppercase text-gray-500 font-bold tracking-widest">Email</p>
                         <a href="mailto:makewrld73@gmail.com" className="text-xl hover:text-white transition-colors">makewrld73@gmail.com</a>
+                    </div>
+                </div>
+
+                <div className="flex items-center gap-4 text-gray-300 group">
+                    <div className="p-3 bg-zinc-900 rounded-full text-white group-hover:bg-[#25D366] group-hover:text-white transition-colors">
+                        <MessageCircle size={24} />
+                    </div>
+                    <div>
+                        <p className="text-xs uppercase text-gray-500 font-bold tracking-widest">WhatsApp</p>
+                        <a href="https://wa.me/244931541130" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-white transition-colors">
+                          +244 931 541 130
+                        </a>
                     </div>
                 </div>
                 
