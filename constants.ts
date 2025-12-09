@@ -44,21 +44,51 @@ export const RELEASES: Release[] = [
 export const VIDEOS: Video[] = [
   {
     id: "vid-trajado",
-    title: "TRAJADO (Official Video)",
+    title: "TRAJADO",
     youtubeId: "SnhuF4EIAyo",
     thumbnailUrl: "https://img.youtube.com/vi/SnhuF4EIAyo/maxresdefault.jpg"
   },
   {
-    id: "vid-fukin",
-    title: "FUKIN TRAP (Official Video)",
+    id: "vid-banking",
+    title: "BANKING",
+    youtubeId: "Tc1V7y4fHY8",
+    thumbnailUrl: "https://img.youtube.com/vi/Tc1V7y4fHY8/maxresdefault.jpg"
+  },
+  {
+    id: "vid-capsule",
+    title: "CAPSULE (FUKIN TRAP)",
     youtubeId: "bPBIs6OFzDA",
     thumbnailUrl: "https://img.youtube.com/vi/bPBIs6OFzDA/maxresdefault.jpg"
   },
   {
-    id: "vid-nomakesense",
-    title: "NO MAKE SENSE (Visualizer)",
+    id: "vid-mais-perto",
+    title: "MAIS PERTO",
+    youtubeId: "Qg9RXwXZSAw",
+    thumbnailUrl: "https://img.youtube.com/vi/Qg9RXwXZSAw/maxresdefault.jpg"
+  },
+  {
+    id: "vid-nao-sou-mais-um",
+    title: "NÃO SOU MAIS UM",
     youtubeId: "RZGOYRzLJ7c",
     thumbnailUrl: "https://img.youtube.com/vi/RZGOYRzLJ7c/maxresdefault.jpg"
+  },
+  {
+    id: "vid-hoje-e-diferente",
+    title: "HOJE É DIFERENTE",
+    youtubeId: "ER4qZZUMso8",
+    thumbnailUrl: "https://img.youtube.com/vi/ER4qZZUMso8/maxresdefault.jpg"
+  },
+  {
+    id: "vid-uma-reservada",
+    title: "UMA RESERVADA",
+    youtubeId: "x8VETUQOA9I",
+    thumbnailUrl: "https://img.youtube.com/vi/x8VETUQOA9I/maxresdefault.jpg"
+  },
+  {
+    id: "vid-malas-da-gucci",
+    title: "MALAS DA GUCCI",
+    youtubeId: "O_dfReWydIA",
+    thumbnailUrl: "https://img.youtube.com/vi/O_dfReWydIA/maxresdefault.jpg"
   }
 ];
 

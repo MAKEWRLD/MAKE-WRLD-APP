@@ -8,52 +8,53 @@ const Home: React.FC = () => {
     <div className="min-h-screen bg-brand-dark">
       
       {/* HERO SECTION */}
-      <div className="relative min-h-[90vh] flex flex-col justify-center items-center overflow-hidden pt-20 pb-10">
+      <div className="relative min-h-[90vh] flex flex-col justify-center items-center overflow-hidden pt-24 pb-16">
          {/* Background Effect */}
         <div className="absolute inset-0 bg-brand-dark z-0">
-           <div className="absolute top-[10%] left-[50%] -translate-x-1/2 w-[80%] h-[50%] bg-purple-900/10 blur-[120px] rounded-full pointer-events-none" />
+           <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 w-[60%] h-[60%] bg-purple-900/10 blur-[100px] rounded-full pointer-events-none" />
         </div>
 
-        <div className="max-w-4xl mx-auto px-4 w-full relative z-10 flex flex-col items-center text-center gap-10">
+        <div className="max-w-5xl mx-auto px-4 w-full relative z-10 flex flex-col items-center text-center gap-12">
           
+          {/* Artist Image - Centered */}
+          <div className="animate-fade-in relative group">
+             <div className="absolute inset-0 rounded-full bg-white/5 blur-2xl group-hover:bg-white/10 transition-colors duration-700"></div>
+            <div className="relative w-[280px] h-[280px] md:w-[380px] md:h-[380px] rounded-full overflow-hidden shadow-2xl border border-white/10 mx-auto">
+               <img 
+                src="https://picsum.photos/seed/makewrldportrait/800/800" 
+                alt="MAKE WRLD - Milton Gomes Lemba" 
+                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105"
+              />
+            </div>
+          </div>
+
           {/* Text Content */}
-          <div className="space-y-6 animate-slide-up">
-            <h1 className="text-6xl md:text-9xl font-black tracking-tighter text-white leading-none">
-              MAKE <br/> WRLD
+          <div className="space-y-6 animate-slide-up max-w-3xl">
+            <h1 className="text-6xl md:text-8xl font-black tracking-tighter text-white leading-none">
+              MAKE WRLD
             </h1>
             
             <p className="text-lg md:text-2xl text-gray-400 font-light italic tracking-wide">
               "In the chaos of the world, we find our own meaning."
             </p>
 
-            <div className="pt-4 flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="pt-6 flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
                 to="/discography" 
                 className="group px-8 py-4 bg-white text-black font-bold uppercase tracking-widest hover:bg-gray-200 transition-colors flex items-center justify-center gap-2 min-w-[200px]"
               >
-                Listen Now
+                Latest Music
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link 
-                to="/biography" 
+                to="/videos" 
                 className="px-8 py-4 border border-white/20 text-white font-bold uppercase tracking-widest hover:bg-white/5 transition-colors min-w-[200px]"
               >
-                About Me
+                Watch Videos
               </Link>
             </div>
           </div>
 
-          {/* Artist Image - Centered */}
-          <div className="animate-fade-in mt-4">
-            <div className="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px] bg-zinc-800 rounded-full overflow-hidden shadow-2xl border-4 border-white/5 mx-auto">
-               <img 
-                src="https://picsum.photos/seed/makewrldportrait/800/800" 
-                alt="MAKE WRLD - Milton Gomes Lemba" 
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/50 via-transparent to-transparent"></div>
-            </div>
-          </div>
         </div>
       </div>
 
