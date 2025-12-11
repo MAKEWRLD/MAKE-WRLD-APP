@@ -2,9 +2,10 @@
 <html lang="pt" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no" />
     <title>MAKE WRLD | Official Artist Site</title>
     <meta name="description" content="MAKE WRLD | Official Artist Site - Music, videos and news">
+    <meta name="theme-color" content="#000000">
 
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -49,7 +50,19 @@
     </script>
 
     <style>
-      body { background-color: #000000; color: #e5e5e5; font-family: 'Inter', sans-serif; }
+      body { 
+        background-color: #000000; 
+        color: #e5e5e5; 
+        font-family: 'Inter', sans-serif;
+        /* Prevent text selection to feel more like an app */
+        -webkit-user-select: none;
+        user-select: none;
+        /* Safe area padding for notched phones */
+        padding-top: env(safe-area-inset-top);
+        padding-bottom: env(safe-area-inset-bottom);
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
+      }
       ::-webkit-scrollbar { width: 8px; }
       ::-webkit-scrollbar-track { background: #000000; }
       ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
@@ -67,6 +80,12 @@
         width: 100%;
         height: 100%;
       }
+      
+      /* Re-enable text selection for input fields */
+      input, textarea {
+        -webkit-user-select: text;
+        user-select: text;
+      }
     </style>
   <script type="importmap">
 {
@@ -76,7 +95,8 @@
     "react": "https://aistudiocdn.com/react@^19.2.1",
     "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
     "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.10.1",
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.32.0"
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.32.0",
+    "@capacitor/cli": "https://aistudiocdn.com/@capacitor/cli@^8.0.0"
   }
 }
 </script>
