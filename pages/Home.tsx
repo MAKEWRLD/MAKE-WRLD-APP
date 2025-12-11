@@ -4,26 +4,25 @@ import { Link } from 'react-router-dom';
 import { SOCIAL_LINKS } from '../constants';
 
 const Home: React.FC = () => {
-  // Elements for the floating background - More items, smaller sizes, lower opacity
+  // Enhanced floating background elements
   const floatingTexts = [
-    { text: "MAKE WRLD", top: "10%", left: "5%", font: "font-mono", size: "text-lg", delay: "0s", opacity: "0.05" },
-    { text: "MAKE WRLD", top: "25%", left: "85%", font: "font-serif", size: "text-sm", delay: "1s", opacity: "0.03" },
-    { text: "MAKE WRLD", top: "70%", left: "15%", font: "font-sans", size: "text-xl", delay: "2s", opacity: "0.04" },
-    { text: "MAKE WRLD", top: "85%", left: "75%", font: "font-black", size: "text-base", delay: "3s", opacity: "0.05" },
-    { text: "MAKE WRLD", top: "50%", left: "90%", font: "font-mono", size: "text-xs", delay: "4s", opacity: "0.03" },
-    { text: "MAKE WRLD", top: "15%", left: "45%", font: "font-serif", size: "text-sm", delay: "1.5s", opacity: "0.04" },
-    { text: "MAKE WRLD", top: "60%", left: "5%", font: "font-sans", size: "text-lg", delay: "2.5s", opacity: "0.05" },
-    { text: "MAKE WRLD", top: "40%", left: "20%", font: "font-bold", size: "text-xs", delay: "0.5s", opacity: "0.03" },
-    
-    // New added items for density
-    { text: "MAKE WRLD", top: "5%", left: "60%", font: "font-light", size: "text-xs", delay: "3.5s", opacity: "0.02" },
-    { text: "MAKE WRLD", top: "35%", left: "40%", font: "font-mono", size: "text-sm", delay: "2.2s", opacity: "0.04" },
-    { text: "MAKE WRLD", top: "80%", left: "35%", font: "font-serif", size: "text-base", delay: "1.8s", opacity: "0.03" },
-    { text: "MAKE WRLD", top: "95%", left: "10%", font: "font-black", size: "text-lg", delay: "4.5s", opacity: "0.05" },
-    { text: "MAKE WRLD", top: "20%", left: "10%", font: "font-sans", size: "text-xs", delay: "0.8s", opacity: "0.02" },
-    { text: "MAKE WRLD", top: "55%", left: "70%", font: "font-mono", size: "text-xl", delay: "3.2s", opacity: "0.04" },
-    { text: "MAKE WRLD", top: "90%", left: "50%", font: "font-bold", size: "text-sm", delay: "1.2s", opacity: "0.03" },
-    { text: "MAKE WRLD", top: "12%", left: "95%", font: "font-serif", size: "text-xs", delay: "2.8s", opacity: "0.04" },
+    { text: "MAKE WRLD", top: "10%", left: "5%", font: "font-mono", size: "text-lg", delay: "0s", opacity: "0.1" },
+    { text: "MAKE WRLD", top: "25%", left: "85%", font: "font-serif", size: "text-sm", delay: "1s", opacity: "0.05" },
+    { text: "MAKE WRLD", top: "70%", left: "15%", font: "font-sans", size: "text-2xl", delay: "2s", opacity: "0.08" },
+    { text: "MAKE WRLD", top: "85%", left: "75%", font: "font-black", size: "text-base", delay: "3s", opacity: "0.1" },
+    { text: "MAKE WRLD", top: "50%", left: "90%", font: "font-mono", size: "text-xs", delay: "4s", opacity: "0.05" },
+    { text: "MAKE WRLD", top: "15%", left: "45%", font: "font-serif", size: "text-sm", delay: "1.5s", opacity: "0.06" },
+    { text: "MAKE WRLD", top: "60%", left: "5%", font: "font-sans", size: "text-lg", delay: "2.5s", opacity: "0.09" },
+    { text: "MAKE WRLD", top: "40%", left: "20%", font: "font-bold", size: "text-xs", delay: "0.5s", opacity: "0.05" },
+    // Denser population
+    { text: "MAKE WRLD", top: "5%", left: "60%", font: "font-light", size: "text-xs", delay: "3.5s", opacity: "0.04" },
+    { text: "MAKE WRLD", top: "35%", left: "40%", font: "font-mono", size: "text-sm", delay: "2.2s", opacity: "0.07" },
+    { text: "MAKE WRLD", top: "80%", left: "35%", font: "font-serif", size: "text-base", delay: "1.8s", opacity: "0.06" },
+    { text: "MAKE WRLD", top: "95%", left: "10%", font: "font-black", size: "text-lg", delay: "4.5s", opacity: "0.1" },
+    { text: "MAKE WRLD", top: "20%", left: "10%", font: "font-sans", size: "text-xs", delay: "0.8s", opacity: "0.04" },
+    { text: "MAKE WRLD", top: "55%", left: "70%", font: "font-mono", size: "text-xl", delay: "3.2s", opacity: "0.08" },
+    { text: "MAKE WRLD", top: "90%", left: "50%", font: "font-bold", size: "text-sm", delay: "1.2s", opacity: "0.05" },
+    { text: "MAKE WRLD", top: "12%", left: "95%", font: "font-serif", size: "text-xs", delay: "2.8s", opacity: "0.06" },
   ];
 
   return (
@@ -54,7 +53,7 @@ const Home: React.FC = () => {
           
           {/* Text Content */}
           <div className="space-y-6 animate-slide-up max-w-4xl mt-12">
-            <h1 className="text-7xl md:text-[10rem] font-black tracking-tighter text-white leading-none">
+            <h1 className="text-6xl sm:text-7xl md:text-[10rem] font-black tracking-tighter text-white leading-none">
               MAKE WRLD
             </h1>
             
@@ -67,7 +66,7 @@ const Home: React.FC = () => {
                 to="/discography" 
                 className="group px-8 py-4 bg-white text-black font-bold uppercase tracking-widest hover:bg-gray-200 transition-colors flex items-center justify-center gap-2 min-w-[200px]"
               >
-                Música Recente
+                Ouvir Agora
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link 

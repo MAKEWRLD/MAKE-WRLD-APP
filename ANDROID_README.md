@@ -1,64 +1,66 @@
-# MAKE WRLD - Android App Build Instructions
+# MAKE WRLD - Guia de Compilação Android
 
-To generate the `com.makewrld.app` APK file from this project, follow these steps.
+Este guia explica como gerar a aplicação Android (APK) para o projeto MAKE WRLD.
 
-## Prerequisites
-1. **Node.js** installed.
-2. **Android Studio** installed (with Android SDK and Virtual Device/Emulator).
+## 1. Preparação da Imagem do Artista
 
-## 1. Install Dependencies
-Run the following command in your terminal to install Capacitor (the bridge between React and Android):
+Antes de compilar, você precisa adicionar sua foto real:
+1. Crie a pasta: `public/assets/img/` (se não existir, crie na raiz do projeto ou dentro de `public`).
+2. Adicione sua foto com o nome: `artist_bio.jpg`.
+
+## 2. Instalação de Dependências
+
+Certifique-se de que tem o Node.js e o Android Studio instalados.
+
+No terminal, na raiz do projeto, execute:
 
 ```bash
+# 1. Instalar dependências do projeto e do Capacitor
+npm install
 npm install @capacitor/core @capacitor/cli @capacitor/android
 ```
 
-## 2. Initialize Android Platform
-Generate the `android` folder which contains the native project structure.
+## 3. Preparação do Projeto Android
 
 ```bash
-# Build the React web app first
+# 2. Construir a versão web (gera a pasta dist)
 npm run build
 
-# Add the Android platform
+# 3. Adicionar a plataforma Android (apenas na primeira vez)
 npx cap add android
-```
 
-## 3. Sync Configuration
-Whenever you make changes to the `build` folder (your React code) or `capacitor.config.ts`, you must sync:
-
-```bash
+# 4. Sincronizar os arquivos web com a pasta nativa Android
 npx cap sync
 ```
 
-## 4. Icons and Splash Screen (Optional)
-To generate app icons automatically using your artist image:
+## 4. Gerar o APK
 
-1. Create a folder `resources` in the root.
-2. Add your icon as `resources/icon.png` (1024x1024) and splash as `resources/splash.png` (2732x2732).
-3. Install the asset tool: `npm install @capacitor/assets --save-dev`
-4. Run: `npx capacitor-assets generate --android`
+### Opção A: Via Android Studio (Recomendado)
 
-## 5. Build the APK
+```bash
+npx cap open android
+```
+1. O Android Studio irá abrir. Aguarde o "Gradle Sync" terminar.
+2. No menu superior, vá em **Build > Build Bundle(s) / APK(s) > Build APK(s)**.
+3. O APK (Debug) será gerado em: `android/app/build/outputs/apk/debug/app-debug.apk`.
+4. Transfira este arquivo para o seu telemóvel e instale.
 
-### Option A: Using Android Studio (Recommended)
-1. Open the Android project:
-   ```bash
-   npx cap open android
-   ```
-2. Wait for Gradle to sync.
-3. Go to **Build > Build Bundle(s) / APK(s) > Build APK(s)**.
-4. The APK will be generated in `android/app/build/outputs/apk/debug/app-debug.apk`.
+### Opção B: Via Linha de Comandos (Rápido)
 
-### Option B: Command Line
+Se já tiver o ambiente Android configurado no terminal:
+
 ```bash
 cd android
 ./gradlew assembleDebug
 ```
 
-## 6. Release (Google Play)
-To build a release Bundle (AAB) for the Play Store:
-1. In Android Studio, go to **Build > Generate Signed Bundle / APK**.
-2. Choose **Android App Bundle**.
-3. Create a new Key store (keep your password safe!).
-4. Click Finish. The `.aab` file will be generated.
+O ficheiro APK estará em `android/app/build/outputs/apk/debug/`.
+
+## 5. Publicar na Play Store (Release)
+
+Para criar a versão final (AAB) para a Google Play:
+1. Abra o Android Studio (`npx cap open android`).
+2. Vá em **Build > Generate Signed Bundle / APK**.
+3. Escolha **Android App Bundle**.
+4. Crie uma "Keystore" (guarde a senha em local seguro!).
+5. Prossiga até finalizar. O ficheiro `.aab` será gerado para upload na Play Store Console.

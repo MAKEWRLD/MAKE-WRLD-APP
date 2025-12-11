@@ -16,7 +16,7 @@ export const RELEASES: Release[] = [
     type: ReleaseType.SINGLE,
     year: "2022",
     coverUrl: "https://img.youtube.com/vi/SnhuF4EIAyo/maxresdefault.jpg",
-    youtubeUrl: "https://youtu.be/SnhuF4EIAyo?si=QZg4_2tn6e6gW6N"
+    youtubeUrl: "https://youtu.be/SnhuF4EIAyo"
   },
   {
     id: "fukin-trap-single",
@@ -24,7 +24,7 @@ export const RELEASES: Release[] = [
     type: ReleaseType.SINGLE,
     year: "2023",
     coverUrl: "https://img.youtube.com/vi/bPBIs6OFzDA/maxresdefault.jpg",
-    youtubeUrl: "https://youtu.be/bPBIs6OFzDA?si=C3bdtiTej8jytgkU"
+    youtubeUrl: "https://www.youtube.com/watch?v=bPBIs6OFzDA"
   },
   {
     id: "no-make-sense-ep",
@@ -32,7 +32,7 @@ export const RELEASES: Release[] = [
     type: ReleaseType.EP,
     year: "2024",
     coverUrl: "https://img.youtube.com/vi/RZGOYRzLJ7c/maxresdefault.jpg",
-    youtubeUrl: "https://youtu.be/RZGOYRzLJ7c?si=iCaJmLNE7oYOULWs",
+    youtubeUrl: "https://www.youtube.com/watch?v=RZGOYRzLJ7c",
     tracks: [
       { title: "Nonsense", duration: "2:55" },
       { title: "Void", duration: "3:10" },

@@ -2,7 +2,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'com.makewrld.app',
-  appName: 'MAKE WRLD',
+  appName: 'FAÇA O MUNDO',
   webDir: 'dist',
   server: {
     androidScheme: 'https'

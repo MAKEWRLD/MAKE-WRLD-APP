@@ -6,11 +6,14 @@ const Biography: React.FC = () => {
     <div className="min-h-screen pt-32 pb-20 px-4 max-w-5xl mx-auto">
       <div className="animate-fade-in flex flex-col md:flex-row gap-16 items-start">
         
-        {/* Bio Image */}
+        {/* Bio Image - Points to local asset, fallback to a placeholder if missing */}
         <div className="w-full md:w-5/12 aspect-[3/4] relative group">
             <div className="absolute inset-0 border border-white/20 translate-x-3 translate-y-3 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
             <img 
-              src="https://images.unsplash.com/photo-1517500588498-c641cc99933e?q=80&w=1000&auto=format&fit=crop" 
+              src="/assets/img/artist_bio.jpg"
+              onError={(e) => {
+                e.currentTarget.src = "https://images.unsplash.com/photo-1517500588498-c641cc99933e?q=80&w=1000&auto=format&fit=crop"; // Fallback if local file not found
+              }}
               alt="MAKE WRLD Portrait" 
               loading="lazy"
               className="w-full h-full object-cover grayscale relative z-10 shadow-2xl"
