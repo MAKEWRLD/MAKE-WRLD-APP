@@ -49,11 +49,24 @@ const Home: React.FC = () => {
       {/* HERO SECTION */}
       <div className="relative min-h-screen flex flex-col justify-center items-center pt-24 pb-16 z-10">
         
-        <div className="max-w-5xl mx-auto px-4 w-full flex flex-col items-center text-center gap-12">
+        <div className="max-w-5xl mx-auto px-4 w-full flex flex-col items-center text-center gap-8">
           
+          {/* Centralized Artist Image */}
+          <div className="relative w-48 h-48 md:w-64 md:h-64 mb-4 animate-fade-in">
+             <div className="absolute inset-0 bg-white/10 rounded-full blur-2xl animate-pulse"></div>
+             <img 
+               src="/assets/img/artist_bio.jpg" 
+               onError={(e) => {
+                 e.currentTarget.src = "https://images.unsplash.com/photo-1517500588498-c641cc99933e?q=80&w=1000&auto=format&fit=crop"; 
+               }}
+               alt="MAKE WRLD" 
+               className="w-full h-full object-cover rounded-full border-2 border-white/20 relative z-10 shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
+             />
+          </div>
+
           {/* Text Content */}
-          <div className="space-y-6 animate-slide-up max-w-4xl mt-12">
-            <h1 className="text-6xl sm:text-7xl md:text-[10rem] font-black tracking-tighter text-white leading-none">
+          <div className="space-y-6 animate-slide-up max-w-4xl">
+            <h1 className="text-6xl sm:text-7xl md:text-[8rem] font-black tracking-tighter text-white leading-none">
               MAKE WRLD
             </h1>
             
